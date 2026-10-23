@@ -1,0 +1,22 @@
+# Secrets — never commit
+.env
+.streamlit/secrets.toml
+
+# Local data cache (raw downloads + working DB). The deploy snapshot is published separately.
+data/raw/
+data/*.duckdb
+data/*.duckdb.wal
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Editors / OS
+.vscode/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
